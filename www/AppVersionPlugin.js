@@ -33,4 +33,4 @@ function promiseWrapper(success, fail, method) {
   return toReturn;
 }
 
-module.exports = AppVersion;
+module.exports = new AppVersion();
