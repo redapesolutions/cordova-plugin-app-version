@@ -30,13 +30,19 @@ TODO: Write these instructions
 
 If you are using jQuery, use:
 
-    cordova.getAppVersion().then(function (version) {
+    cordova.AppVersion.getVersionName().then(function (version) {
+        $('.version').text(version);
+    });
+    cordova.AppVersion.getVersionCode().then(function (version) {
         $('.version').text(version);
     });
 
 If not:
 
-    cordova.getAppVersion(function (version) {
+    cordova.AppVersion.getVersionName(function (version) {
+        alert(version);
+    });
+    cordova.AppVersion.getVersionCode(function (version) {
         alert(version);
     });
 
