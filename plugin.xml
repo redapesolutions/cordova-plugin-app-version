@@ -20,7 +20,7 @@
     </engines>
 
     <js-module src="www/AppVersionPlugin.js">
-       <clobbers target="cordova.getAppVersion" />
+       <clobbers target="cordova.AppVersion" />
     </js-module>
 
     <!-- android -->
